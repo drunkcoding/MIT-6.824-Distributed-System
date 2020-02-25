@@ -55,9 +55,10 @@ func masterSock() string {
 type WorkerState int
 
 const (
-	WORKER_IDLE       WorkerState = 0
-	WORKER_INPROGRESS WorkerState = 1
-	WORKER_COMPLETED  WorkerState = 2
+	WORKER_IDLE              WorkerState = 0
+	WORKER_MAP_INPROGRESS    WorkerState = 1
+	WORKER_COMPLETED         WorkerState = 2
+	WORKER_REDUCE_INPROGRESS WorkerState = 3
 )
 
 type WorkerTask int
